@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.objects {
+  background-image: linear-gradient(to bottom right, magenta, yellow);
+  text-align: center;
+  display: block;
+  height: auto;
+  padding: 5%;
+}
+
+.objects h1 {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

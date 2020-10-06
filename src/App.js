@@ -1,8 +1,13 @@
 import React from 'react';
 import './App.css';
+import Objects from './objects'
 
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return (
+  
+    <Objects />
+  )
+
 }
 
 export default App;
