@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.assertion-container {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.assertion-container#yes {
+  background-color: aquamarine;
+}
+
+.assertion-container#no {
+  background-color: lightcoral;
+}
+
+.statement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+#imgDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 50vh;
+}
