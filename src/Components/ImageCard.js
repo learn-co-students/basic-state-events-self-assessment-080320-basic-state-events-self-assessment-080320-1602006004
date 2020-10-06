@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {yes, no} from './objects'
+import {yes, no} from '../objects'
 
 class ImageCard extends Component {
 
