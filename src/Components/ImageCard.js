@@ -5,24 +5,14 @@ class ImageCard extends Component {
 
     state={
         canIDoThis: false,
-        yesInfo: yes,
-        noInfo: no
     }
 
     getImageSrc = () => {
-        if(this.state.canIDoThis) {
-        return this.state.yesInfo["yes-image"]
-        } else {
-        return this.state.noInfo["no-image"]
-        }
+        return this.state.canIDoThis ? yes["yes-image"] : no["no-image"]
     }
 
     getStatement = () => {
-        if(this.state.canIDoThis) {
-        return this.state.yesInfo["yes-statement"]
-        } else {
-        return this.state.noInfo["no-statement"]
-        }
+        return this.state.canIDoThis ? yes["yes-statement"] : no["no-statement"]
     }
 
     changeState = () => {
