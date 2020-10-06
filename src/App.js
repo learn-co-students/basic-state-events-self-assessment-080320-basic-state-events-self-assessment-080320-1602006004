@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import DrakeContainer from './DrakeContainer'
 
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return <DrakeContainer />;
 }
 
 export default App;
