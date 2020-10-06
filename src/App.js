@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
+import StatementAndImg from './StatementAndImg';
+
 
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return <StatementAndImg />;
 }
 
 export default App;
