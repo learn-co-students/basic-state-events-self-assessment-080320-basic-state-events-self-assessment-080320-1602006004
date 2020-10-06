@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import DrakeCard from './DrakeCard';
 
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return <DrakeCard />
 }
 
 export default App;
