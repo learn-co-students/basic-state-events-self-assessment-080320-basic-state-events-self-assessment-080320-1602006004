@@ -9,7 +9,7 @@ class App extends React.Component {
     }
 
     render(){
-        return <Card cardSides={this.state.cardSides}/>;
+        return <Card cardSides={this.state.cardSides} />;
     }
 }
 

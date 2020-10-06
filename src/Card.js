@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css';
 
 
 class Card extends React.Component {
@@ -14,18 +15,28 @@ class Card extends React.Component {
         }))
     }
 
-    render(){
+    getImage = () => {
         if (this.state.clicked){
-            return <div onClick={this.clickHandler}>
-                <h1>{this.props.cardSides[1]['no-statement']}</h1>
-                <img src={this.props.cardSides[1]['no-image']} />
-            </div>
+            return this.props.cardSides[1]['no-image']
         } else {
-            return <div onClick={this.clickHandler}>
-                <h1>{this.props.cardSides[0]['yes-statement']}</h1>
-                <img src={this.props.cardSides[0]['yes-image'] } />
-            </div>
+            return this.props.cardSides[0]['yes-image']
         }
+    }
+
+    getStatement = () => {
+        if (this.state.clicked){
+            return this.props.cardSides[1]['no-statement']
+        } else {
+            return this.props.cardSides[0]['yes-statement']
+        }
+    }
+
+    render(){
+            return <div >
+                <h1>{this.getStatement()}</h1>
+                <img src={this.getImage()} onClick={this.clickHandler} />
+            </div>
+       
     }
 }
 
