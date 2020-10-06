@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import { Answer } from './Answer.js'
 
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return <Answer />;
 }
 
 export default App;
