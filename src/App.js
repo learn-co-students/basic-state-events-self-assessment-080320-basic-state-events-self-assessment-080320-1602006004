@@ -10,7 +10,7 @@ class App extends React.Component {
 
   changeYes = () => {
     this.setState((prevState) => {
-      if(this.state.yesNoString === 'yes'){
+      if(prevState.yesNoString === 'yes'){
         return {
           yesNoObj: no,
           yesNoString: 'no'
