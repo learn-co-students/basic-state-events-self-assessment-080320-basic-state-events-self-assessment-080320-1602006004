@@ -1,8 +1,11 @@
 import React from 'react';
 import './App.css';
+import ImageContainer from './Containers/ImageContainer';
 
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return (
+    <ImageContainer />
+  );
 }
 
 export default App;
