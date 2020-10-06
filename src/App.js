@@ -1,8 +1,15 @@
 import React from 'react';
+import ImageMotivator from './ImageMotivator';
+import Header from './Header';
 import './App.css';
 
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return (
+    <div>
+      <Header />
+      <ImageMotivator />
+    </div>
+  );
 }
 
 export default App;
