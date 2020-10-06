@@ -11,25 +11,16 @@ class Answer extends Component{
         this.setState(prevState => ({clicked: !prevState.clicked}))
     }
     render(){
-        
-        if (!this.state.clicked){
-            let answer = this.state.no
-            console.log(answer["no-image"])
+            let answer = this.state
             return(
                 <div>
-                    <div>{answer['no-statement']}</div>
-                    <img src={answer["no-image"]} onClick={this.clickHandler}/>
+                    <div className="statement">{answer.clicked? answer.no['no-statement'] : answer.yes['yes-statement']}</div>
+                    <div className="img-container">
+                        <img className="drake" src={answer.clicked ? answer.no['no-image'] : answer.yes['yes-image']} onClick={this.clickHandler}/>
+                    </div>
                 </div>
                 )
-            }else{
-                let answer = this.state.yes
-                return (
-                    <h1>    
-                    <div>{answer['yes-statement']}</div>
-                        <img src={answer["yes-image"]} onClick={this.clickHandler}/>
-                </h1>
-            )
-        }
+            
         
     }
 }
