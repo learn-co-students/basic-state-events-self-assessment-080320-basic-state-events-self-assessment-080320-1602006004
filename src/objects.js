@@ -1,5 +1,25 @@
-const yes = { "yes-image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQptvy1IuxkMzOgcsR_uWucIkwE67jI04GfUg&usqp=CAU", "yes-statement": "google the answer" }
+import React from 'react';
 
-const no = { "no-image": "https://thumbs.gfycat.com/ElaborateShinyBernesemountaindog-size_restricted.gif", "no-statement": "learn problem solving, syntax, reading documentation" }
+class Objects extends React.Component {
+
+     state = {
+          image: yes || no
+     }
+
+     clickHandler = () => {
+          this.setState((prevState) => ({clicked: !prevState.clicked}))
+          // show yes/no statement/image
+     }
+
+     render(){
+          return (
+          < img src=  onClick={this.clickHandler}
+          
+          {this.state.yes ? }
+          />
+          
+          )
+     }
+}
 
 export { yes, no }
