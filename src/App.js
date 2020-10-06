@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     console.log ({ yes, no })
     return (
-    <div className="app" onClick={this.clickHandler}>
+    <div className="container" onClick={this.clickHandler}>
     <div className="statement">{this.state.clicked ? <h2>{yes.statement}</h2> : <h2>{no.statement}</h2>}</div>;
     <div className="image">{this.state.clicked ? <img src={yes.image} alt=""/> : <img src={no.image} alt=""/>}</div>;
     </div>
