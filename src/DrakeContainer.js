@@ -5,7 +5,7 @@ import { yes, no} from './objects'
 class DrakeContainer extends React.Component {
 
     state = {
-        good: true
+        good: false
     }
 
     toggleDrake = () => {
