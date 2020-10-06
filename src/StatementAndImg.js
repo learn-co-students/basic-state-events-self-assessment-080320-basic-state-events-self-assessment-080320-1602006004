@@ -23,10 +23,9 @@ class StatementAndImgContainer extends React.Component {
            })
        }
     }
-    //on click we want to reset state to no and no img and toggle
     render(){
         return(
-            <div>
+            <div style={{display: 'grid', justifyContent: 'center'}}>
                 <div>
                     <h1>{this.state.yesOrNoStatement}</h1>
                 </div>
