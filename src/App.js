@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
+import StatementCard from './statementCard';
+
 
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return <StatementCard statement={true} />;
 }
 
 export default App;
