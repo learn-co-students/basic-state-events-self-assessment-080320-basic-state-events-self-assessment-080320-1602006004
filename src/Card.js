@@ -1,20 +1,35 @@
 import React, { Component } from 'react';
-import { statements } from './Statement'
-import Display from './Display'
+import { yes, no } from './Statement'
+
 
 
 class Card extends Component {
-    
-    showDisplays = () => {
-        return (statements.map(obj => <Display key={obj.type} card={obj}/>))
+
+    state = {
+        yes: yes,
+        no: no,
+        clicked: false
     }
     
+    clickHandler = () => {
+        this.setState((prevState) => ({ clicked: !prevState.clicked }))
+    }
+
 
     render() {
-        console.log(this.showDisplays());
         return (
-           <div>
-               {this.showDisplays()}
+           <div className="container" onClick={this.clickHandler}>
+               {this.state.clicked?
+               <>
+                    <h1>{this.state.yes["yes-statement"]}</h1>
+                    <img alt="" src={this.state.yes["yes-image"]} />
+                </>
+                :
+                <>
+                    <h1>{this.state.no["no-statement"]}</h1>
+                    <img alt="" src={this.state.no["no-image"]} />
+                </>
+            }
            </div>
         )
     }
