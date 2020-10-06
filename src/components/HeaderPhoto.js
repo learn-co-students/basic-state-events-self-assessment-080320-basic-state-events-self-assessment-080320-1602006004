@@ -19,6 +19,16 @@ class HeaderPhoto extends Component {
         }
 
     }
+    yesBoi2 = () => {
+        this.setState((ps) => {
+            
+            if (ps.data["no-image"]) {
+                return { data: yes } 
+            } else {
+                return { data : no }
+            }
+        })
+    }
 
     render() {
         return(
@@ -26,7 +36,7 @@ class HeaderPhoto extends Component {
                 <h1>{this.state.data["no-statement"] ? (this.state.data["no-statement"]) : (this.state.data["yes-statement"])}</h1>
                 <img 
                     src = {this.state.data["no-image"] ? (this.state.data["no-image"]) : (this.state.data["yes-image"])}
-                    onClick = {this.yesBoi}
+                    onClick = {this.yesBoi2}
                 ></img>
             </div>
             
