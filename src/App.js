@@ -26,7 +26,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='App-header'>
         <h1>{this.state.yesNoObj[`${this.state.yesNoString}-statement`]}</h1>
         <img src={this.state.yesNoObj[`${this.state.yesNoString}-image`]} alt='' onClick={this.changeYes}/>
       </div>
