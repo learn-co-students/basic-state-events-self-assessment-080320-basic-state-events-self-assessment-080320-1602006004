@@ -32,7 +32,7 @@ class Card extends React.Component {
     }
 
     render(){
-            return <div >
+            return <div className="App App-header">
                 <h1>{this.getStatement()}</h1>
                 <img src={this.getImage()} onClick={this.clickHandler} />
             </div>
