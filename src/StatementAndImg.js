@@ -1,7 +1,7 @@
 import React from 'react'
 import { yes, no } from './objects'
 
-class StatementAndImgContainer extends React.Component {
+class StatementAndImg extends React.Component {
     constructor(){
         super()
         this.state = {
@@ -36,4 +36,4 @@ class StatementAndImgContainer extends React.Component {
         )
     }
 }
-export default StatementAndImgContainer
+export default StatementAndImg
